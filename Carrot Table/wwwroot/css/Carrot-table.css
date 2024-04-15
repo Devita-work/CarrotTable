@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    display: inline-block;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.table-wrapper {
+    overflow: auto;
+    height: 100%; 
+}
+
+table {
+    border-collapse: collapse;
+    outline: none;
+    table-layout: fixed;
+    width: 100%;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 1px solid #000;
+}
+th, td {
+    word-wrap: break-word;
+    border: 1px solid #000;
+    padding: 10px;
+    min-width: 100px;
+    box-sizing: border-box;
+}
+
+.y_resize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 100%;
+    background: transparent;
+    cursor: col-resize;
+    z-index: 2;
+}
